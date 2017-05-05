@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/EditTextAppearance"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_adapter_background_root"
+        android:gravity="center_vertical|left"
+        android:hint="@string/add_person"
+        android:paddingLeft="@dimen/dp_8"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_12" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_22"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:background="@drawable/yipai_add_icon" />
+</LinearLayout>

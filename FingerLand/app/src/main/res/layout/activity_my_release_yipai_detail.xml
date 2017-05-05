@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_root"
+        android:orientation="vertical">
+
+        <!--头部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12">
+
+            <!--招标-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_top_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="深圳旧改项目招募成员"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/edit"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+
+            <!--日期-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6">
+
+                <TextView
+                    android:id="@+id/tv_release_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/release_date"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_release_date_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_release_date"
+                    android:text="2016-12-28"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_end_date_content"
+                    android:text="@string/closing_date"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_end_date_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2016-12-28"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--招募介绍-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <include layout="@layout/view_divider_line" />
+
+            <!--招募介绍-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_38"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/recruit_introduce"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/iv_click_recruit_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_3"
+                    android:src="@drawable/xiala_2_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_recruit_introduce_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:text="招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍招募介绍"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <include layout="@layout/view_divider_line" />
+
+            <!--已有成员-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_38">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/member_has"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/iv_click_member_has"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_3"
+                    android:src="@drawable/xiala_2_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_member_has_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:text="已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员已有成员"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <include layout="@layout/view_divider_line" />
+
+            <!--招募宣言-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_38">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/recruit_declaration"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/iv_click_recruit_declaration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_3"
+                    android:src="@drawable/xiala_2_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_recruit_declaration_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:text="招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言招募宣言"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--在申用户-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="@string/apply_for_user"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <!--列表-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_position"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_position_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/cf2f2f2"
+                        android:clipToPadding="true"
+                        android:saveEnabled="false" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

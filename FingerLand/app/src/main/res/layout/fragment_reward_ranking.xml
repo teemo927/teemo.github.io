@@ -1,0 +1,135 @@
+<com.lanjiang.figersland.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_bid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/viewpager_dots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llt_publish_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:drawableRight="@drawable/fabu_unselect_icon"
+                    android:gravity="center"
+                    android:text="@string/publish_time"
+                    android:textColor="@color/gray_blue_color"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line_vertical" />
+
+            <LinearLayout
+                android:id="@+id/llt_deadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_deadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:drawableRight="@drawable/fabu_unselect_icon"
+                    android:gravity="center"
+                    android:text="@string/deadline"
+                    android:textColor="@color/gray_blue_color"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <include layout="@layout/line_vertical" />
+
+            <LinearLayout
+                android:id="@+id/llt_reward_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_reward_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:drawableRight="@drawable/fabu_unselect_icon"
+                    android:gravity="center"
+                    android:text="@string/reward_money"
+                    android:textColor="@color/gray_blue_color"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <include layout="@layout/line_vertical" />
+
+            <LinearLayout
+                android:id="@+id/llt_reward_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_reward_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxEms="5"
+                    android:drawableRight="@drawable/type"
+                    android:gravity="center"
+                    android:text="@string/reward_type"
+                    android:textColor="@color/gray_blue_color"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.lanjiang.figersland.widget.MyScrollView>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_root"
+              android:orientation="vertical"
+              android:padding="@dimen/dp_12">
+
+    <!--方案一-->
+
+    <RelativeLayout
+        android:id="@+id/rl_plan1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_check_plan1"
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="@dimen/dp_22"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ssdk_oks_classic_check_default"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_check_plan1">
+
+            <TextView
+                android:id="@+id/tv_plan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/plan1"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_plan1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="@string/plan1_content"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/tv_plan1_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="4500.00"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_plan1_price"
+                android:text="@string/currency_China"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_14"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--方案二-->
+    <RelativeLayout
+        android:id="@+id/rl_plan2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_check_plan2"
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="@dimen/dp_22"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ssdk_oks_classic_check_default"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_check_plan2">
+
+            <TextView
+                android:id="@+id/tv_plan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/plan2"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_plan2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="@string/plan2_content"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/tv_plan2_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="3000.00"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_plan2_price"
+                android:text="@string/currency_China"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_14"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--方案三-->
+    <RelativeLayout
+        android:id="@+id/rl_plan3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_check_plan3"
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="@dimen/dp_22"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ssdk_oks_classic_check_default"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_check_plan3">
+
+            <TextView
+                android:id="@+id/tv_plan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:text="@string/plan3"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_plan3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="@string/plan3_content"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/tv_plan3_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2500.00"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_plan3_price"
+                android:text="@string/currency_China"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_14"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_96"
+        android:background="@drawable/blue_btn"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"/>
+</LinearLayout>

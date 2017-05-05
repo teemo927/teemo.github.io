@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#D9D9D9</color>
+    <color name="colorAccent">#ff9500</color>
+    <color name="translate">#00000000</color>
+
+    <!--主色：#0099FF-->
+    <color name="color_main">#0099FF</color>
+    <!--字体颜色 重要字：#1a1d25-->
+    <color name="word_important">#1a1d25</color>
+    <!--普通段落：#616364 -->
+    <color name="word_normal">#616364</color>
+    <!--次要文字及按钮描边：#888d9b-->
+    <color name="word_secondary">#888d9b</color>
+    <!--分割线及标签描边：#d7d7d7-->
+    <color name="line">#d7d7d7</color>
+    <!--导航栏背景色：#3a393f-->
+    <color name="background_navigation">#3a393f</color>
+    <!--背景色: 内容区域：#ffffff  -->
+    <color name="white">#ffffff</color>
+    <!--背景底色：#efeff4-->
+    <color name="background_root">#efeff4</color>
+    <!--按钮不可用颜色-->
+    <color name="btn_disabled">#bebebe</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+
+    <color name="forget_password_text">#bbbbbb</color>
+    <color name="text_gray">#999999</color>
+    <color name="black">#000000</color>
+    <color name="group_select">#77c4fa</color>
+    <color name="money">#ff3b30</color>
+
+    <color name="yellow">#ff9500</color>
+    <color name="yellow_light">#ffcc00</color>
+    <color name="divider_line_color">#bbbbbd</color>
+    <color name="menu_main_line">#37373b</color>
+
+    <color name="blue_light">#7fccff</color>
+    <color name="publish_color">#55ffffff</color>
+
+    <!--银行卡颜色-->
+    <color name="card_green">#239F85</color>
+
+    <color name="cf2f2f2">#f2f2f2</color>
+    <color name="translate2">#cc000000</color>
+</resources>

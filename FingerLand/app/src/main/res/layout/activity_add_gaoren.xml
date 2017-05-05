@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/activity_add_gaoren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_root"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:text="@string/on_list_title"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical"/>
+
+            <EditText
+                android:id="@+id/et_title"
+                style="@style/EditTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="@color/white"
+                android:hint="上来露个脸"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:text="@string/on_list_reason"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <EditText
+            android:id="@+id/et_reason"
+            style="@style/EditTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="我是头牌"
+            android:padding="@dimen/dp_12"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:text="@string/request_info"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <EditText
+            android:id="@+id/et_request"
+            style="@style/EditTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="衡阳均可"
+            android:padding="@dimen/dp_12"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white">
+
+            <CheckBox
+                android:id="@+id/cb_pay"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/selector_checkbox_style_agree"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/cb_pay"
+                android:gravity="center"
+                android:text="@string/i_want_pay"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:text="@string/on_list_time"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_8"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/start_time"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/end_time"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/duration_time"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/btn_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_date"
+                    android:gravity="center"
+                    android:text="2016-12-02"
+                    android:textColor="@color/gray_white_color"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/btn_end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_date"
+                    android:gravity="center"
+                    android:text="2016-01-02"
+                    android:textColor="@color/gray_white_color"
+                    android:textSize="@dimen/sp_14" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="31"
+                        android:textColor="@color/color_main"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_duration"
+                        android:gravity="center"
+                        android:text="@string/days"
+                        android:textColor="@color/word_normal"
+                        android:textSize="@dimen/sp_14" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:padding="@dimen/dp_12"
+                android:text="@string/land_pay"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical"/>
+
+            <EditText
+                android:id="@+id/et_money"
+                style="@style/EditTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:hint="￥8000.00"
+                android:padding="@dimen/dp_12"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white">
+
+            <CheckBox
+                android:id="@+id/cb_agree"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/selector_checkbox_style_agree"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_agree"
+                android:gravity="center"
+                android:text="@string/agree_rules"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_msg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_msg"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_msg"
+                    android:gravity="center"
+                    android:text="@string/on_list_rules"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/sp_12" />
+
+                <include
+                    layout="@layout/view_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/tv_rules"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/tv_msg" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:background="@drawable/blue_btn"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

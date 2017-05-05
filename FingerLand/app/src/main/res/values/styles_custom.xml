@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--投标页面TabLayout样式-->
+    <style name="MyTabLayoutTextAppearance">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/divider_line_color</item>
+    </style>
+
+    <!--报名详情页面左侧TextView样式-->
+    <style name="TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_12</item>
+        <item name="android:layout_marginRight">@dimen/dp_12</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/word_important</item>
+    </style>
+
+    <!--报名详情页面右侧EditText样式-->
+    <style name="EditTextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/divider_line_color</item>
+        <item name="android:textColorHint">@color/divider_line_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <!--  pop_window显示隐藏动画-->
+    <style name="window_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_hidden_anim</item>
+    </style>
+
+    <!--  右上角主菜单动画-->
+    <style name="menu_window_anim_style">
+        <item name="android:windowEnterAnimation">@anim/in_from_top_anim</item>
+        <item name="android:windowExitAnimation">@anim/out_to_top_anim</item>
+    </style>
+
+    <!--  pop_window动画自底向上-->
+    <style name="window_anim_bottom_to_top">
+        <item name="android:windowEnterAnimation">@anim/in_from_bottom_anim</item>
+        <item name="android:windowExitAnimation">@anim/out_to_bottom_anim</item>
+    </style>
+
+    <!--  TabPageIndicator-->
+    <style parent="Widget" name="MyWidget.TabPageIndicator">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style parent="Widget" name="MyTextAppearance.TabPageIndicator">
+        <!-- 设置文本字体颜色选择器 -->
+        <item name="android:textColor">@drawable/textcolor</item>
+    </style>
+
+</resources>

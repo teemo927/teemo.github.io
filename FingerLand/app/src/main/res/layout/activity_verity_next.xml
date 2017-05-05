@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanjiang.figersland.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.lanjiang.figersland.ui.VerifyActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_verity_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name"
+                android:textColor="@color/word_important"
+                android:layout_marginRight="@dimen/dp_12"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical" />
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/EditTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_weight="1"
+                android:hint="@string/please_same_business_licence" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_mar_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/produce_service"
+                android:layout_marginRight="@dimen/dp_12"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical" />
+
+            <EditText
+                android:id="@+id/et_produce_service"
+                style="@style/EditTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_weight="1"
+                android:hint="@string/input_produce" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_mar_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_tel"
+                android:layout_marginRight="@dimen/dp_12"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical" />
+
+            <EditText
+                android:id="@+id/et_company_tel"
+                style="@style/EditTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_weight="1"
+                android:hint="@string/input_company_tel" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_mar_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_address"
+                android:textColor="@color/word_important"
+                android:layout_marginRight="@dimen/dp_12"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical" />
+
+            <EditText
+                android:id="@+id/et_company_address"
+                style="@style/EditTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_weight="1"
+                android:hint="@string/detail_address_card" />
+
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_mar_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/business_licence"
+                android:layout_marginRight="@dimen/dp_12"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_business_licence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_8"
+                android:text="@string/not_upload"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/iv_business_licence"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:src="@drawable/next_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_mar_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_logo"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:src="@drawable/companylogo" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_company_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_8"
+                android:text="@string/not_upload"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/iv_company_logo"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:src="@drawable/next_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_mar_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calling_card"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_calling_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_8"
+                android:text="@string/not_upload"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/iv_calling_card"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:src="@drawable/next_grey" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal_mar_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:text="@string/company_profile"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            style="@style/EditTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            android:background="@color/background_root"
+            android:gravity="left|top"
+            android:hint="@string/input_company_profile"
+            android:padding="@dimen/dp_12" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/blue_btn"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="@string/jump"
+            android:textColor="@color/color_main" />
+
+    </LinearLayout>
+</com.lanjiang.figersland.widget.MyScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_pre_devel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中铁溪源花园三期工程"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="@dimen/dp_4"
+            android:background="@drawable/shape_mark_red"
+            android:text="中铁集团"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tv_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:text="右边"
+            android:textColor="@color/money"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+</LinearLayout>

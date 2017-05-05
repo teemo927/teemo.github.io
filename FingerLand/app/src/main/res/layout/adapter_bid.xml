@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_bid"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingLeft="@dimen/dp_12"
+    android:gravity="center"
+    android:background="@drawable/selector_adapter_gray_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中铁溪源花园三期桩基检测工程"
+        android:textColor="@color/word_normal"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_bid"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="@dimen/dp_8"
+        android:gravity="center"
+        android:text="深圳"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_location"
+        android:layout_alignParentRight="true"
+        android:text="2016-12-8"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>

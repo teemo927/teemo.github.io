@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanjiang.figersland.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_bid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/viewpager_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_12" />
+
+        </RelativeLayout>
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_12"
+            android:text="@string/interested_topic" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_topic"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_160" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_8"
+            android:background="@color/background_root" />
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_12"
+            android:text="@string/newest_bid" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llt_publish_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:drawableRight="@drawable/fabu_unselect_icon"
+                    android:gravity="center"
+                    android:text="@string/hot"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line_vertical" />
+
+            <LinearLayout
+                android:id="@+id/llt_zone_filter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_zone_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/zone_filter"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_blue_color"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:drawableRight="@drawable/location_blue_icon"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <include layout="@layout/line_vertical" />
+
+            <LinearLayout
+                android:id="@+id/llt_deadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_deadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:drawableRight="@drawable/fabu_unselect_icon"
+                    android:gravity="center"
+                    android:text="@string/deadline"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</com.lanjiang.figersland.widget.MyScrollView>

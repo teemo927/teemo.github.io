@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/root_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/background_root"
+        android:childIndicator="@null"
+        android:divider="@color/background_root"
+        android:listSelector="@color/translate"
+        android:dividerHeight="1px"
+        android:background="@color/background_root"
+        android:groupIndicator="@null" />
+
+</LinearLayout>

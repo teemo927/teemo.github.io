@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lanjiang.figersland">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 读写储存卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 网络连接权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 短信权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 改变wifi状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Default">
+
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- ShareSDK所需activity -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 招投标 -->
+        <activity
+            android:name=".ui.BidActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.BidDetailActivity" />
+        <activity android:name=".ui.AllTopicActivity" />
+        <activity android:name=".ui.TopicDetailActivity" />
+        <activity android:name=".ui.SignUpDetailActivity" />
+        <activity android:name=".ui.VerifyActivity" />
+        <activity android:name=".ui.VerityNextActivity" />
+
+        <activity
+            android:name=".ui.SiteControlActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.ReleaseRewardActivity" />
+        <activity android:name=".ui.ReleaseTenderActivity" />
+        <activity android:name=".ui.ReleaseRewardPayActivity" />
+        <activity android:name=".ui.ScreeningSupplierActivity" />
+        <activity android:name=".ui.InviteSupplierActivity" />
+        <activity android:name=".ui.ReleaseRewardClassificationActivity" />
+        <activity android:name=".ui.ChoiceOfSupplierActivity" />
+        <activity android:name=".ui.MyCollectionActivity" />
+        <activity
+            android:name=".ui.MineActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.MyReleaseActivity" />
+        <activity android:name=".ui.MyReleaseBaPingDetailActivity" />
+        <activity android:name=".ui.MyOrderBaPingDetailActivity" />
+        <activity android:name=".ui.MyReleaseMasterRequisitionActivity" />
+        <activity android:name=".ui.MyOrderMasterRequisitionActivity" />
+        <activity android:name=".ui.MyOrderRewardDetailActivity" />
+        <activity android:name=".ui.MyOrderYipaiDetailActivity" />
+        <activity android:name=".ui.MyReleaseRewardDetailActivity" />
+        <activity android:name=".ui.MyReleaseTenderDetailActivity" />
+        <activity android:name=".ui.MyNewsActivity" />
+        <activity android:name=".ui.MyReleaseYipaiDetailActivity" />
+
+        <activity
+            android:name=".ui.PreDevelopmentActivity"
+            android:launchMode="singleTop" />
+        <!-- 证件 -->
+        <activity android:name=".ui.PapersActivity" />
+        <activity android:name=".ui.PapersDetailActivity" />
+        <activity android:name=".ui.AddPaperActivity" />
+        <activity android:name=".ui.PaperRequisitionActivity" />
+        <!-- 高人榜 -->
+        <activity android:name=".ui.MasterActivity" />
+        <activity android:name=".ui.MasterDetailActivity" />
+        <activity android:name=".ui.RecordMasterActivity" />
+        <activity android:name=".ui.AddMasterActivity" />
+        <activity android:name=".ui.MasterRequisitionActivity" />
+        <!-- 一拍即合 -->
+        <activity android:name=".ui.PublishRecruitActivity" />
+        <activity android:name=".ui.YipaiActivity" />
+        <activity android:name=".ui.MemberVerifyActivity" />
+        <activity android:name=".ui.YipaiDetailActivity" />
+
+        <!--设置-->
+        <activity android:name=".ui.SettingActivity" />
+        <activity android:name=".ui.PaySettingActivity" />
+        <activity android:name=".ui.HelpActivity" />
+        <activity android:name=".ui.SearchActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_pre_development_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llt_search"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_30"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/dp_30"-->
+            <!--android:layout_marginRight="@dimen/dp_30"-->
+            <!--android:background="@drawable/shape_search_translate"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="@dimen/dp_12"-->
+                <!--android:layout_marginRight="@dimen/dp_6"-->
+                <!--android:src="@drawable/search_small_icon" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/et_search"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/translate"-->
+                <!--android:clickable="false"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:hint="@string/search"-->
+                <!--android:maxLines="1"-->
+                <!--android:textColor="@color/text_gray"-->
+                <!--android:textColorHint="@color/edit_text"-->
+                <!--android:textCursorDrawable="@drawable/shape_color_cursor"-->
+                <!--android:textSize="@dimen/sp_12" />-->
+
+        <!--</LinearLayout>-->
+
+        <include
+            layout="@layout/viewpager_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_12" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_104"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_zhengjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_8"
+            android:drawableTop="@drawable/zhengjian"
+            android:gravity="center"
+            android:text="@string/zhengjian"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_gaoren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_8"
+            android:drawableTop="@drawable/gaoren"
+            android:gravity="center"
+            android:text="@string/gaoren"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_yipai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_8"
+            android:drawableTop="@drawable/yipai"
+            android:gravity="center"
+            android:text="@string/yipai"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="@color/background_root" />
+
+    <com.lanjiang.figersland.widget.ImageText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:text="最新消息" />
+
+    <include layout="@layout/line_horizontal" />
+
+</LinearLayout>

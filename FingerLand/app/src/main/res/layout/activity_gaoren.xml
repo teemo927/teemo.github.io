@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gaoren"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root"
+    android:orientation="vertical"
+    tools:context="com.lanjiang.figersland.ui.MasterActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <include
+        android:id="@+id/un_finish"
+        layout="@layout/view_un_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"/>
+
+    <RelativeLayout
+        android:id="@+id/rlt_publish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@color/color_main">
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/pencil"
+            android:drawablePadding="@dimen/dp_8"
+            android:gravity="center"
+            android:text="@string/publish_gaoren"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+</LinearLayout>

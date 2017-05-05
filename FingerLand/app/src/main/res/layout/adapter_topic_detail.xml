@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapter_topic_detail"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56"
+    android:background="@drawable/selector_adapter_gray_white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_12">
+
+    <com.lanjiang.figersland.widget.CircleImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_12"
+        android:src="@drawable/logo"
+        app:civ_border_color="@color/line"
+        app:civ_border_width="1px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="兰江山地三期工程"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_project_name"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="兰江集团"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dp_12"
+        android:scaleType="center"
+        android:src="@drawable/selector_collection_star_icon" />
+</RelativeLayout>

@@ -1,0 +1,404 @@
+<resources>
+    <string name="app_name">指尖地产</string>
+
+
+    <!--登录界面-->
+    <string name="skip">跳过</string>
+    <string name="phone_number">手机号</string>
+    <string name="password">密码</string>
+    <string name="free_register">免费注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="other_login">第三方登录</string>
+
+    <!--注册界面-->
+    <string name="verification_code">验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="register">注册</string>
+
+    <!--忘记密码界面-->
+    <string name="submit">提交</string>
+
+    <!--主界面-->
+    <string name="bid">招标投标</string>
+    <string name="reward">悬赏</string>
+    <string name="site_control">现场管控</string>
+    <string name="me">我的账户</string>
+    <string name="bid_en">Tendering</string>
+    <string name="site_control_en">Screen Control</string>
+    <string name="me_en">Individual Account</string>
+    <string name="pre_develop">前期开发</string>
+    <string name="pre_develop_en">Pre Development</string>
+
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enterprise_bid">企业招标</string>
+    <string name="reward_ranking">悬赏排行</string>
+    <string name="interested_topic">感兴趣话题</string>
+    <string name="publish_time">发布时间</string>
+    <string name="zone_filter">地区筛选</string>
+    <string name="deadline">截止日期</string>
+    <string name="hot">最热推荐</string>
+
+    <!--发布悬赏-->
+    <string name="post_reward">发布悬赏</string>
+    <string name="payment_order">支付订单</string>
+    <string name="write_reward_info">填写悬赏信息</string>
+    <string name="write_tender_info">填写招标信息</string>
+    <string name="recruiting_range">招募范围介绍</string>
+    <string name="input_recruiting_range">请输入简要的招募范围</string>
+    <string name="recruiting_company">招募公司</string>
+    <string name="lanjiang_group">兰江集团</string>
+    <string name="contact_way">联系方式</string>
+    <string name="input_contact_way">请输入联系方式</string>
+    <string name="contact_address">联系地址</string>
+    <string name="input_contact_address">请输入联系地址</string>
+    <string name="sign_up_condition_details">报名条件详细描述</string>
+    <string name="registered_capital">注册资本：\n服务区域：\n其他：</string>
+    <string name="sign_up_attachment">报名条件附件</string>
+    <string name="the_tender_details">招标详情</string>
+    <string name="necessary_conditions">简要描述基本必须的竞标条件</string>
+    <string name="rewards">悬赏金额</string>
+    <string name="input_reward">请输入悬赏金额</string>
+    <string name="next_step">下一步</string>
+    <string name="currency_China">￥</string>
+
+
+    <!--发布招标-->
+    <string name="post_tender">发布招标</string>
+    <string name="project_type">项目类型</string>
+    <string name="tender_project">招投标项目</string>
+    <string name="suitable_for_large">适用于大型，周期较长招投标项目</string>
+    <string name="reward_project">悬赏项目</string>
+    <string name="suitable_for_small">适用于小型，较紧凑、金额较小项目</string>
+    <string name="description_large">招投标项目适用于大型，周期较长招投标项目，一般项目金额在300W及以上，
+        是应用技术、经济的方法和市场经济的竞争机制的作用，有组织开展的一种则优成交的方式。这种方式是在货物、
+        工程和服务的采购行为中，招标人通过事先公布的采购和要求，吸引众多的投标人按照同等条件进行平等竞争，
+        按照规定程序并组织技术、经济和法律等方面专家对众多的投标人进行综合评审从中择优选定项目的中标人。</string>
+    <string name="description_small">悬赏任务数额一般在几十到几千不等，但也有几万甚至几十万的任务。
+        主要以提交的作品的质量好坏作为中标标准，当然其中也带有雇主的主观喜好，中标人数较少，多为一个或几个，
+        因此竞争激烈。大型悬赏任务赏金数额巨大，中标者也较多，但参与人也很多，能够快速获得结果反馈。</string>
+
+    <!--供应商选择方式页面-->
+    <string name="invite_designated_suppliers">邀请指定供应商</string>
+    <string name="entrust_filter_suppliers">委托筛选供应商</string>
+    <string name="choise_quality_suppliers">委托我方选择优质供应商</string>
+    <string name="description_invite_suppliers">邀请用户信赖的供应商来竞标，以防供应商未接收到此标的的释放，平台依据供应商在平台的资质排行进行收取一定费用。</string>
+    <string name="description_entrust_suppliers">委托平台进行供应商的筛选，可以选取该分类下平台前十的供应商来参与招标，平台根据供应商排名及数量进行收费</string>
+    <string name="description_bid_freely">自由竞标为所有供应商均可进行投标，平台不收取任何费用</string>
+
+    <!--悬赏详情界面-->
+    <string name="bid_detail">悬赏信息</string>
+    <string name="bid_range_introduce">招募范围介绍</string>
+    <string name="contact_information">联系方式</string>
+    <string name="project_location">项目所在地：%1$s</string>
+    <string name="project_time">截止日期：%1$s</string>
+    <string name="entry_condition">报名条件详细描述</string>
+    <string name="need_enter_success">需报名成功后方可看见，马上点击下方【立即报名】</string>
+    <string name="bid_detail_info">招标详情</string>
+    <string name="reward_money">悬赏金额</string>
+    <string name="share">分享</string>
+    <string name="sign_up_now">立即报名</string>
+    <string name="entry_condition_text">注册资本：50万元\n服务区域：北京\n其他：\n在中华人民共和国国境登记注册、具有独立法人资格，具备冷水机组、冷却塔加工制造或代理资格</string>
+    <string name="related_document_download">相关附件(点击下载)：</string>
+    <string name="name_doc">%1$s.doc</string>
+    <string name="newest_bid">最新招标</string>
+    <string name="newest_bid_text">兰江集团三期桩基检验工程</string>
+    <string name="kantan_design">勘探设计</string>
+    <string name="sign_up_details">报名详情</string>
+    <string name="company_name">公司名称</string>
+    <string name="service_zone">服务区域</string>
+    <string name="register_money">注册资本</string>
+    <string name="contact_addr">联系地址</string>
+    <string name="main_business">主营业务</string>
+    <string name="sign_up_simple_desc">报名简要描述</string>
+    <string name="file_upload">竞标文件上传</string>
+    <string name="reward_type">悬赏类别</string>
+
+
+    <!--发布悬赏-支付页面-->
+    <string name="release_date">发布日期：</string>
+    <string name="closing_date">截止日期：</string>
+    <string name="reward_classification">悬赏分类：</string>
+    <string name="primary_project">基础工程</string>
+    <string name="pay_amount">支付金额：</string>
+    <string name="choice_payment">选择支付方式</string>
+    <string name="confirm_payment">确认支付</string>
+
+    <!--委托筛选供应商页面-->
+    <string name="screening_supplier">委托筛选供应商</string>
+    <string name="plan1">方案一</string>
+    <string name="plan2">方案二</string>
+    <string name="plan3">方案三</string>
+    <string name="plan1_content">全部选择前10供应商，600/个，优惠价￥4500</string>
+    <string name="plan2_content">选择10供应商，5名为前5,5名为11-15</string>
+    <string name="plan3_content">选择10供应商，5名为前5,5名为16-20</string>
+
+    <!--邀请供应商页面-->
+    <string name="invite_supplier">邀请供应商</string>
+    <string name="optional_supplier">可选择供应商</string>
+    <string name="charge_standard"><u>收费标准</u></string>
+    <string name="select_all">全选</string>
+    <string name="total">合计：</string>
+    <string name="immediate_payment">立即支付</string>
+
+    <!--发布悬赏分类页面-->
+    <string name="choise_type">选择分类</string>
+
+    <!--高人页面-->
+    <string name="zhengjian">擂台证件</string>
+    <string name="gaoren">高人榜</string>
+    <string name="yipai">一拍即合</string>
+    <string name="title_activity_papers">PapersActivity</string>
+    <string name="papers_foremost">证件我来争霸</string>
+    <string name="publish_gaoren">登高人榜</string>
+    <string name="gaoren_detail">榜单详情</string>
+    <string name="on_list_reason">上榜理由</string>
+    <string name="request_info">接单要求</string>
+    <string name="take_over_for_use">我要征用</string>
+    <string name="see_record">查看征用记录 ></string>
+    <string name="use_record">征用记录</string>
+    <string name="history_record">历史记录</string>
+    <string name="add_gaoren">我要上榜</string>
+    <string name="on_list_title">上榜标题</string>
+    <string name="on_list_time">上榜时间</string>
+    <string name="agree_rules">我已阅读并同意</string>
+    <string name="on_list_rules">上榜规则</string>
+    <string name="i_want_pay">我要付费加榜长</string>
+    <string name="land_pay">圈地费用</string>
+    <string name="start_time">起始时间</string>
+    <string name="start_end_time">起止时间</string>
+    <string name="duration_time">起止时长</string>
+    <string name="end_time">截止日期</string>
+    <string name="days">天</string>
+
+    <!--土地使用权证求办-->
+    <string name="land_use_right">土地使用权证求办</string>
+    <string name="Changsha">湖南长沙</string>
+    <string name="to">-</string>
+    <string name="details">详细内容</string>
+    <string name="talk">撩一下吧</string>
+    <string name="transaction">我来办理</string>
+    <string name="details_content">兰江房地产开发有限公司在长沙某地已获得地块，需要尽快办理土地使用权证，详细情况可以进行实时沟通。
+    </string>
+
+    <!--一拍即合-->
+    <string name="publish_recruit">发布招募</string>
+    <string name="title_left">标</string>
+    <string name="title_right">题</string>
+    <string name="recruit_introduce">招募介绍</string>
+    <string name="recruit_member">成员招募</string>
+    <string name="publish_rules">发布规则</string>
+    <string name="member_has">已有成员</string>
+    <string name="member_off">尚缺成员</string>
+    <string name="member_has_num">已有成员(%1$s)</string>
+    <string name="member_off_num">尚缺成员(%1$s)</string>
+    <string name="agree">同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="member_verify">审核成员</string>
+    <string name="recruit_detail">招募详情</string>
+    <string name="recruit_declaration">招募宣言</string>
+    <string name="more">更多</string>
+    <string name="declaration">本次招募范围为深圳福田区旧改项目，项目阶段为申请阶段， 招募项目组相关成员。本次招募范围为深圳福田区旧改项目，项 目阶段为申请阶段，招募项目组相关成员。本次招募范围为深圳 福田区旧改项目，项目阶段为申请阶段，招募项目组相关成员。</string>
+    <string name="recruit_introduce_msg">本次招募范围为深圳福田区旧改项目，项目阶段为申请阶段，  招募项目组相关成员。本次招募范围为深圳福田区旧改项目，项  目阶段为申请阶段，招募项目组相关成员。本次招募范围为深圳  福田区旧改项目，项目阶段为申请阶段，招募项目组相关成员。</string>
+    <string name="i_want_to_participate">我要参与</string>
+    <string name="unfold">收起</string>
+    <string name="sure">确定</string>
+    <string name="select_seat">选择席位</string>
+    <string name="add_person">添加联系人</string>
+    <string name="input_title">请输入标题</string>
+    <string name="input_introduce">请输入招募介绍</string>
+    <string name="ensure_enter">确定参与：</string>
+
+    <!--我的页面-->
+    <string name="my_release">我的发布</string>
+    <string name="my_orders">我的订单</string>
+    <string name="enterprise_certification">企业认证</string>
+    <string name="my_messages">我的消息</string>
+    <string name="my_friends">我的好友</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="input_declaration">请输入招募宣言</string>
+    <string name="draft">（草稿）</string>
+
+    <!--我要霸屏-->
+    <string name="add_zhengjian">我要霸屏</string>
+    <string name="delivery_address">收货地址</string>
+    <string name="papers_requirements">请简要描述自己的办证需求</string>
+    <string name="input_area">点击选择城市</string>
+    <string name="need_area">需求区域</string>
+    <string name="paper_title">霸屏标题</string>
+    <string name="shang">赏</string>
+    <string name="gold">金</string>
+    <string name="publish_bid">发布招标</string>
+    <string name="publish_reword">发布悬赏</string>
+
+    <!--企业认证-->
+    <string name="heads">头像</string>
+    <string name="name">姓名</string>
+    <string name="please_same_user">请与用户信息保持一致</string>
+    <string name="detail_address_card">详细描述至门牌号</string>
+    <string name="address">地址</string>
+    <string name="tel">电话</string>
+    <string name="input_cannt_change">未注册请输入，输入后不可更改</string>
+    <string name="frequently_email">建议使用常用邮箱</string>
+    <string name="produce_service">产品服务</string>
+    <string name="please_same_business_licence">请与营业执照公司名称保持一致</string>
+    <string name="input_produce">请填写公司主营产品</string>
+    <string name="input_company_tel">请输入公司电话</string>
+    <string name="company_tel">公司电话</string>
+    <string name="company_address">公司地址</string>
+    <string name="company_logo">公司logo</string>
+    <string name="business_licence">营业执照</string>
+    <string name="not_upload">未上传</string>
+    <string name="calling_card">名片</string>
+    <string name="company_profile">公司简介</string>
+    <string name="about_us">关于我们</string>
+    <string name="version_check">版本检测</string>
+    <string name="common_question">常见问题</string>
+    <string name="customer_service_tel">客服电话</string>
+    <string name="msg_notice">消息通知</string>
+    <string name="password_setting">密码设置</string>
+    <string name="pay_setting">支付设置</string>
+    <string name="input_company_profile">请输入公司 简介</string>
+    <string name="set_default">设为默认？</string>
+    <string name="is_default">默认</string>
+    <string name="personal_info">个人信息</string>
+    <string name="jump">跳过</string>
+
+    <!--征用界面-->
+    <string name="gaoren_requisition">征用下单</string>
+    <string name="requisition_money">征用赏金</string>
+    <string name="handle_area">办理地区</string>
+    <string name="requisitiom_title">征用标题</string>
+    <string name="requisition_time">征用时间</string>
+    <string name="requisition_reason">征用理由</string>
+    <string name="on_requisition_rules">霸屏下单规则</string>
+    <string name="search">搜索</string>
+
+    <!--霸屏订单详情-->
+    <string name="baping_order_details">霸屏订单详情</string>
+    <string name="baping_release_details">霸屏发布详情</string>
+    <string name="baping_details_title">[求助]办理用地规划许可证</string>
+    <string name="edit">编辑</string>
+    <string name="transaction_area">办理地区：</string>
+    <string name="money_reward">赏金：</string>
+    <string name="transaction_time">办理时间：</string>
+    <string name="transaction_promise">办理承诺：</string>
+    <string name="default_compensation">违约赔偿：</string>
+    <string name="shipping_address">收货地址：</string>
+    <string name="accept_person">受理人：</string>
+    <string name="order_status">订单状态</string>
+    <string name="click_to_modify">点击下方圆点可修改进程</string>
+    <string name="place_order">下单</string>
+    <string name="Dealt_with_in">办理中</string>
+    <string name="delivered">已发货</string>
+    <string name="confirm_goods">确认收货</string>
+    <string name="finish_order">订单完成</string>
+
+    <!--高人征用详情-->
+    <string name="master_requisition_details">高人征用详情</string>
+    <string name="appearance">上来露个脸</string>
+    <string name="number_of_requisitioned">被征用次数：</string>
+    <string name="requisitioned_time">征用时间：</string>
+    <string name="detail">详情</string>
+    <string name="title">标题：</string>
+    <string name="on_list_reason2">上榜理由：</string>
+    <string name="order_requirements">接单要求：</string>
+    <string name="trace_requisition">征用痕迹</string>
+    <string name="trance_title">征用标题：</string>
+    <string name="reasons_for_requisition">征用理由：</string>
+    <string name="order_time">下单时间：</string>
+    <string name="agreed">已同意</string>
+    <string name="refused">已拒绝</string>
+    <string name="payment_confirm">付款确认</string>
+    <string name="requisition_again">再次征用他</string>
+    <string name="evaluate">评价他：</string>
+    <string name="other_agreed">对方已同意</string>
+
+    <!--悬赏订单详情-->
+    <string name="post_reward_details">悬赏订单详情</string>
+    <string name="rewards_money">悬赏金额：</string>
+    <string name="reward_result">悬赏结果：</string>
+    <string name="won">已中标</string>
+    <string name="company_service_area">公司服务区域：</string>
+    <string name="company_registered_capital">公司注册资本：</string>
+    <string name="company_contact">公司联系方式：</string>
+    <string name="company_main_business">公司主营业务：</string>
+    <string name="sign_up_description">报名描述：</string>
+    <string name="tender_file_download">竞标文件下载：</string>
+    <string name="file_download"><u>文件下载.doc</u></string>
+
+    <!--一拍即合详情-->
+    <string name="yipai_details">一拍即合详情</string>
+    <string name="recruiting_introduce">招募介绍</string>
+    <string name="applied_for">我已申请成为</string>
+    <string name="order_status2">订单状态：</string>
+
+    <!--悬赏订单详情-->
+    <string name="project_area">项目所在地：</string>
+    <string name="recruiting_range2">招募范围介绍：</string>
+    <string name="participate_in_reward_companies">参与悬赏的公司</string>
+    <string name="check_details">查看详情</string>
+    <string name="classification">分类：</string>
+    <string name="modification">修改</string>
+    <string name="choice_of_suppliers">供应商选择方式：</string>
+    <string name="bid_freely">自由竞标</string>
+
+    <!--我的消息-->
+    <string name="my_news">我的消息</string>
+
+    <!--一拍即合详情-->
+    <string name="apply_for_user">在申用户</string>
+    <string name="copywriter_and_planer">文案策划</string>
+    <string name="project_manager">项目经理</string>
+    <string name="leave_word">留言</string>
+    <string name="purchasing_manager">采购经理</string>
+
+    <!--霸屏下单-->
+    <string name="handle_commitment">办理承诺</string>
+    <string name="pay_for_promise">违约赔偿</string>
+    <string name="receive_money">可领赏金</string>
+    <string name="paper_requisition">霸屏下单</string>
+    <string name="choose_city">请选择城市</string>
+    <string name="reward_details">招标详情</string>
+    <string name="no_intent">_无参数</string>
+    <string name="hint">提示</string>
+    <string name="cancel">取消</string>
+    <string name="login_out">退出登录</string>
+    <string name="want_to_login_out">确定退出登录？</string>
+    <string name="user_defined">自定义</string>
+    <string name="sure_submit">确定提交申请？</string>
+
+    <!--补充-->
+    <string name="tender_result">竞标结果：</string>
+    <string name="success">成功</string>
+    <string name="tender_order_details">招标订单详情</string>
+    <!--搜索-->
+    <string name="start_date_str">发布日期：%1$s</string>
+    <string name="end_date_str">截止日期：%1$s</string>
+
+    <!--支付设置-->
+    <string name="usable_balance">可用余额</string>
+    <string name="into_default_debit_card">转入默认借记卡</string>
+    <string name="add_card">添加银行卡</string>
+    <string name="sure_set_default">是否设为默认</string>
+    <string name="sure_delete">是否删除</string>
+    <string name="start_in">发起</string>
+    <string name="default_city">深圳</string>
+    <string name="title_activity_nnd">NNDActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

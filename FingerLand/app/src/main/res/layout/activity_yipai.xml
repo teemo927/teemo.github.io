@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_yipai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root"
+    tools:context="com.lanjiang.figersland.ui.YipaiActivity">
+
+    <!--<include-->
+        <!--android:id="@+id/un_finish"-->
+        <!--layout="@layout/view_un_finish"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp_24" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

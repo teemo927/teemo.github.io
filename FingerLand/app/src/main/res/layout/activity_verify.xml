@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_verify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root"
+    android:orientation="vertical"
+    tools:context="com.lanjiang.figersland.ui.VerifyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heads"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <com.lanjiang.figersland.widget.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/uesr_40dp"
+            app:civ_border_color="@color/translate_blue_color"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <com.lanjiang.figersland.widget.CircleImageView
+            android:id="@+id/iv_user1"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:src="@drawable/user1"
+            app:civ_border_color="@color/translate_blue_color"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <com.lanjiang.figersland.widget.CircleImageView
+            android:id="@+id/iv_user2"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:src="@drawable/user2"
+            app:civ_border_color="@color/translate_blue_color"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <com.lanjiang.figersland.widget.CircleImageView
+            android:id="@+id/iv_user3"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:src="@drawable/user3"
+            app:civ_border_color="@color/translate_blue_color"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <com.lanjiang.figersland.widget.CircleImageView
+            android:id="@+id/iv_user4"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:src="@drawable/user4"
+            app:civ_border_color="@color/translate_blue_color"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_defined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_defined"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal_mar_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_12"
+            android:text="@string/name"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_vertical" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:hint="@string/please_same_user" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal_mar_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_12"
+            android:text="@string/address"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_vertical" />
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/EditTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:hint="@string/detail_address_card" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal_mar_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_12"
+            android:text="@string/tel"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_vertical" />
+
+        <EditText
+            android:id="@+id/et_tel"
+            style="@style/EditTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:hint="@string/input_cannt_change" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal_mar_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_12"
+            android:text="@string/ssdk_email"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_vertical" />
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/EditTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:hint="@string/frequently_email" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line_horizontal" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_72"
+        android:background="@drawable/blue_btn"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

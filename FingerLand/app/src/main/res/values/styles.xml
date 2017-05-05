@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- 设置TabPageIndicator -->
+        <item name="vpiTabPageIndicatorStyle">@style/MyWidget.TabPageIndicator</item>
+        
+        <!-- 设置4.4以上透明状态栏 -->
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!--无ActionBar-->
+    <style name="AppTheme.Default" parent="@style/AppTheme">
+
+    </style>
+
+</resources>

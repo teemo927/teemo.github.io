@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_root"
+              android:orientation="vertical">
+
+    <!--头部标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_13.5"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/baping_details_title"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_16"/>
+    </RelativeLayout>
+
+    <!--办理内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12">
+
+        <!--办理地区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/transaction_area"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_transaction_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="深圳"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+        </LinearLayout>
+
+        <!--赏金-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/money_reward"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_money_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="￥8000"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+        </LinearLayout>
+
+        <!--办理时间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/transaction_time"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="2016..0.10"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="@string/to"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="2017.01.25"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+        </LinearLayout>
+
+        <!--办理承诺-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/transaction_promise"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_transaction_promise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_5"
+                android:lineSpacingExtra="@dimen/dp_6"
+                android:text="深圳地产二十年，兰江紧扣城市发展脉搏，用心演绎有主张的建筑理念，赋予房地产开发以情感和生命力，专注客户价值取向，为社会打造超越客户预期的品质生活蓝本，通过不断创新和科学实施，视开发产品为精心之作品"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+        </LinearLayout>
+
+        <!--违约赔偿-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/default_compensation"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_default_compensation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="￥800"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+        </LinearLayout>
+
+        <!--收货地址-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shipping_address"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_shipping_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:text="深圳市南山区文心五路闽泰大厦16楼兰江集团"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--订单状态-->
+    <include layout="@layout/bottom_order_status"/>
+
+</LinearLayout>

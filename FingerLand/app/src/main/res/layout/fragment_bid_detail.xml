@@ -1,0 +1,339 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root">
+
+    <LinearLayout
+        android:id="@+id/llt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llt_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/share_icon"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <include layout="@layout/line_vertical" />
+
+        <LinearLayout
+            android:id="@+id/llt_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/messag_icon"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center"
+                android:text="兰江集团"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="@string/sign_up_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/line_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_above="@id/llt_bottom" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+                <com.lanjiang.figersland.widget.CircleImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:src="@drawable/logo"
+                    app:civ_border_color="@color/line"
+                    app:civ_border_width="1px" />
+
+                <TextView
+                    android:id="@+id/tv_project_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="兰江集团三期桩基检验工程"
+                    android:textColor="@color/word_important"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_36"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+                <!--<View-->
+                <!--android:id="@+id/dot_1"-->
+                <!--android:layout_width="@dimen/dp_4"-->
+                <!--android:layout_height="@dimen/dp_4"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="@dimen/dp_4"-->
+                <!--android:background="@drawable/shape_ring_blue" />-->
+
+                <TextView
+                    android:id="@+id/tv_project_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/project_location"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_project_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/project_time"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <!--<View-->
+                <!--android:id="@+id/dot_2"-->
+                <!--android:layout_width="@dimen/dp_4"-->
+                <!--android:layout_height="@dimen/dp_4"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="@dimen/dp_4"-->
+                <!--android:layout_toLeftOf="@id/tv_project_time"-->
+                <!--android:background="@drawable/shape_ring_blue" />-->
+            </RelativeLayout>
+
+            <com.lanjiang.figersland.widget.ImageText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:text="@string/bid_range_introduce"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_bid_range_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@color/white"
+                android:padding="@dimen/dp_12"
+                android:text="本次招标范围为浙江区域的申菱广场项目"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <com.lanjiang.figersland.widget.ImageText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:text="@string/contact_information"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_contact_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@color/white"
+                android:padding="@dimen/dp_12"
+                android:text="@string/need_enter_success"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <com.lanjiang.figersland.widget.ImageText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:text="@string/entry_condition"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_entry_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:minHeight="@dimen/dp_36"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_12"
+                android:text="@string/entry_condition_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/related_document_download"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_related_document"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/name_doc"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <com.lanjiang.figersland.widget.ImageText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:text="@string/bid_detail_info"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_bid_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@color/white"
+                android:minHeight="@dimen/dp_36"
+                android:padding="@dimen/dp_12"
+                android:text="本次招标范围为深圳区域的兰江山地项目"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+
+            <LinearLayout
+                android:id="@+id/llt_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@color/white"
+                android:minHeight="@dimen/dp_36"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/tv_reward_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:text="@string/reward_money"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <include layout="@layout/line_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:text="￥8000.00"
+                    android:textColor="@color/money"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

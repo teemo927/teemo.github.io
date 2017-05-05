@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanjiang.figersland.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_publish_recruit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_root"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context="com.lanjiang.figersland.ui.PublishRecruitActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_24"
+                android:text="@string/title_left"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_12"
+                android:text="@string/title_right"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical"/>
+
+            <EditText
+                android:id="@+id/et_title"
+                style="@style/EditTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:background="@color/white"
+                android:hint="@string/input_title"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:text="@string/recruit_introduce"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <EditText
+            android:id="@+id/et_introduce"
+            style="@style/EditTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/input_introduce"
+            android:padding="@dimen/dp_12"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/recruit_member"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/member_has"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <ListView
+                    android:id="@+id/lv_member_has"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/white"
+                    android:dividerHeight="@dimen/dp_8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/member_off"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <ListView
+                    android:id="@+id/lv_member_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/white"
+                    android:dividerHeight="@dimen/dp_8" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/contact_way"
+                android:textColor="@color/word_important"
+                android:layout_marginRight="@dimen/dp_12"
+                android:textSize="@dimen/sp_14" />
+
+            <include layout="@layout/line_vertical"/>
+
+            <EditText
+                android:id="@+id/et_contact"
+                style="@style/EditTextAppearance"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:hint="@string/input_contact_way"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <com.lanjiang.figersland.widget.ImageText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:text="@string/recruit_declaration"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/line_horizontal" />
+
+        <EditText
+            android:id="@+id/et_declaration"
+            style="@style/EditTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_72"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/input_declaration"
+            android:padding="@dimen/dp_12"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:id="@+id/rlt_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white">
+
+            <CheckBox
+                android:id="@+id/cb_agree"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_margin="@dimen/dp_4"
+                android:background="@drawable/selector_checkbox_style_agree"
+                android:button="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_agree"
+                android:gravity="center"
+                android:text="@string/agree_rules"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_msg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_msg"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_msg"
+                    android:gravity="center"
+                    android:text="@string/publish_rules"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/sp_12" />
+
+                <include
+                    layout="@layout/view_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@id/tv_rules"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_toRightOf="@id/tv_msg" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/dp_320"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@drawable/blue_btn"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</com.lanjiang.figersland.widget.MyScrollView>

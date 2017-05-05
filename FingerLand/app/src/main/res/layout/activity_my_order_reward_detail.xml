@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root"
+    android:orientation="vertical">
+
+    <!--头部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/lanjianglogo" />
+
+        <RelativeLayout
+            android:id="@+id/rl_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@id/iv_logo">
+
+            <TextView
+                android:id="@+id/tv_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兰江山第三期桩基检测工程"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_top_title"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="发布日期："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_release_date_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_release_date"
+                android:layout_below="@id/tv_top_title"
+                android:layout_toRightOf="@id/tv_release_date"
+                android:text="2016-12-28"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_other1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_release_date"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/rewards_money"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_other2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_other1"
+                android:layout_below="@id/tv_release_date"
+                android:layout_toRightOf="@id/tv_other1"
+                android:text="￥8000"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_reward_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_other1"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/reward_result"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_reward_result_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_other1"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_toRightOf="@+id/tv_reward_result"
+                android:text="@string/won"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_project"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截止日期："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_end_date_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_end_date"
+                android:text="2016-12-28"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_other3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_end_date"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="分类："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_other4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_other3"
+                android:layout_below="@id/tv_end_date"
+                android:layout_toRightOf="@id/tv_other3"
+                android:text="基础工程"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--详情一整块-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_12">
+
+        <!--公司服务区域-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_service_area"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_company_service_area_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳分公司"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <!--公司注册资本-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_registered_capital"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_company_registered_capital_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50万"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <!--公司联系方式-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_contact"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_company_contact_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:text="0755-86821459   广东省深圳市南山区文心五路闽泰大厦16楼兰江集团"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <!--公司主营业务-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_main_business"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_company_main_business_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:text="地产建设"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <!--报名描述-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_description"
+                android:textColor="@color/word_important"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_sign_up_description_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:lineSpacingExtra="@dimen/dp_3"
+                android:text="深耕地产二十年，兰江紧扣城市发展脉搏，用心演绎有主张的建设理念，赋予房地产开发以情感和生命力，专注客户价值取向，为社会打造超越客户预期的品质生活蓝本，通过不断创新和科学实施，视开发产品为精心之作品"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <!--竞标文件下载-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tender_file_download"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_file_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:text="@string/file_download"
+                android:textColor="@color/color_main"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

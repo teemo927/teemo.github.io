@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_root"
+        android:orientation="vertical">
+
+        <!--招募范围介绍-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48">
+
+                <include
+                    android:id="@+id/icon1"
+                    layout="@layout/view_blue"
+                    android:layout_width="@dimen/dp_4"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/icon1"
+                    android:text="@string/recruiting_range"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+            <EditText
+                android:id="@+id/et_recruiting_range"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_72"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_recruiting_range"
+                android:paddingBottom="@dimen/dp_14"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_14"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/tv_recruiting_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/recruiting_company"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <!--竖线-->
+                <include
+                    android:id="@+id/vertical_line1"
+                    layout="@layout/line_vertical"
+                    android:layout_width="@dimen/dp_0.5dp"
+                    android:layout_height="@dimen/dp_15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_recruiting_company" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/vertical_line1"
+                    android:text="@string/lanjiang_group"
+                    android:textColor="@color/divider_line_color"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/tv_contact_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/contact_way"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <!--竖线-->
+                <include
+                    android:id="@+id/vertical_line2"
+                    layout="@layout/line_vertical"
+                    android:layout_width="@dimen/dp_0.5dp"
+                    android:layout_height="@dimen/dp_15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_contact_way" />
+
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/vertical_line2"
+                    android:background="@null"
+                    android:hint="@string/input_contact_way"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColorHint="@color/divider_line_color"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/tv_contact_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/contact_address"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <!--竖线-->
+                <include
+                    android:id="@+id/vertical_line3"
+                    layout="@layout/line_vertical"
+                    android:layout_width="@dimen/dp_0.5dp"
+                    android:layout_height="@dimen/dp_15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_contact_address" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/vertical_line3"
+                    android:background="@null"
+                    android:hint="@string/input_contact_address"
+                    android:maxLines="1"
+                    android:textColorHint="@color/divider_line_color"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/tv_start_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/start_end_time"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <!--竖线-->
+                <include
+                    android:id="@+id/vertical_line3"
+                    layout="@layout/line_vertical"
+                    android:layout_width="@dimen/dp_0.5dp"
+                    android:layout_height="@dimen/dp_15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_start_end_time" />
+
+                <Button
+                    android:id="@+id/btn_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/vertical_line3"
+                    android:background="@drawable/selector_date"
+                    android:gravity="center"
+                    android:text="2016-12-02"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/btn_start_time"
+                    android:text="@string/to"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+                <Button
+                    android:id="@+id/btn_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/tv_to"
+                    android:background="@drawable/selector_date"
+                    android:gravity="center"
+                    android:text="2017-01-02"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+        </LinearLayout>
+
+        <!--报名条件详细描述-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12">
+
+                <include
+                    android:id="@+id/icon2"
+                    layout="@layout/view_blue"
+                    android:layout_width="@dimen/dp_4"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/icon2"
+                    android:text="@string/sign_up_condition_details"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+            <EditText
+                android:id="@+id/et_registered_capital"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_72"
+                android:background="@null"
+                android:paddingBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_12"
+                android:text="@string/registered_capital"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12">
+
+                <ImageView
+                    android:id="@+id/iv_folder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/folder" />
+
+                <TextView
+                    android:id="@+id/tv_folder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_toRightOf="@id/iv_folder"
+                    android:text="@string/sign_up_attachment"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_file_name"
+                    android:layout_width="@dimen/dp_220"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_toRightOf="@id/tv_folder"
+                    android:background="@color/background_root"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:text="文件名"
+                    android:textColor="@color/divider_line_color"
+                    android:textSize="@dimen/sp_10" />
+||||||| .r81
+                    android:textColor="@color/divider_line_color"
+                    android:textSize="@dimen/sp_14"/>
+=======
+                    android:textColor="@color/divider_line_color"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_doc_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_folder"
+                    android:background="@color/background_root"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:text="文件名"
+                    android:textColor="@color/divider_line_color"
+                    android:textSize="@dimen/sp_12" />
+>>>>>>> .r84
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--招标详情-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12">
+
+                <include
+                    android:id="@+id/icon3"
+                    layout="@layout/view_blue"
+                    android:layout_width="@dimen/dp_4"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/icon3"
+                    android:text="@string/the_tender_details"
+                    android:textColor="@color/word_normal"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <!--华丽分割线-->
+            <include layout="@layout/view_divider_line" />
+
+
+            <EditText
+                android:id="@+id/et_necessary_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_72"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/necessary_conditions"
+                android:paddingBottom="@dimen/dp_14"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_14"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <!--悬赏金额-->
+        <RelativeLayout
+            android:id="@+id/rl_rewards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/tv_rewards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/rewards"
+                android:textColor="@color/word_normal"
+                android:textSize="@dimen/sp_14" />
+
+            <include
+                android:id="@+id/vertical_line4"
+                layout="@layout/line_vertical"
+                android:layout_width="@dimen/dp_0.5dp"
+                android:layout_height="@dimen/dp_15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/tv_rewards" />
+
+            <TextView
+                android:id="@+id/tv_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_toRightOf="@id/vertical_line4"
+                android:text="@string/currency_China"
+                android:textColor="@color/money"
+                android:textSize="@dimen/sp_16" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_toRightOf="@id/tv_currency"
+                android:background="@null"
+                android:hint="@string/input_reward"
+                android:inputType="numberDecimal"
+                android:textColor="@color/money"
+                android:textColorHint="@color/divider_line_color"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@drawable/blue_btn"
+            android:text="@string/next_step"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</ScrollView>

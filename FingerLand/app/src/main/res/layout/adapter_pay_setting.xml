@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapter_pay_setting"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_78"
+        android:layout_marginLeft="@dimen/dp_34"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/shape_card_white"
+        android:orientation="vertical"
+        android:translationZ="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_34"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="中国邮政"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bank"
+            android:text="储蓄卡"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_card_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:text="**** **** **** 4588"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_bank"
+            android:layout_alignBottom="@+id/tv_bank"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/set_default"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_12"
+        app:backgroundTint="@color/white"
+        app:rippleColor="@color/white"
+        app:borderWidth="0dp"
+        android:clickable="false"
+        app:elevation="@dimen/dp_8"
+        app:srcCompat="@drawable/banklogo" />
+</RelativeLayout>

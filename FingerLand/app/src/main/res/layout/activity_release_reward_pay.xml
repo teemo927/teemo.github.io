@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_root"
+              android:orientation="vertical">
+
+    <!--图标-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_zhongtie_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/zhongtie_icon1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_zhongtie_icon"
+            android:text="@string/newest_bid_text"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14"/>
+    </RelativeLayout>
+
+    <!--悬赏时间-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/release_date"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_release_date_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_release_date"
+            android:text="2016-10-25"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_closing_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_release_date"
+            android:text="@string/closing_date"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_closing_date_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_release_date"
+            android:layout_toRightOf="@id/tv_closing_date"
+            android:text="2017-02-25"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_reward_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_closing_date"
+            android:text="@string/reward_classification"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_reward_classification_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_closing_date"
+            android:layout_toRightOf="@id/tv_reward_classification"
+            android:text="@string/primary_project"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_12"/>
+    </RelativeLayout>
+
+    <!--支付金额-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_amount"
+            android:textColor="@color/text_gray"/>
+
+        <TextView
+            android:id="@+id/tv_currency_China"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_pay_amount"
+            android:text="@string/currency_China"
+            android:textColor="@color/money"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_currency_China"
+            android:text="8000"
+            android:textColor="@color/money"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_13"
+        android:text="@string/choice_payment"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_40">
+
+        <Button
+            android:id="@+id/btn_confirm_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/blue_btn"
+            android:text="@string/confirm_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"/>
+
+        <ListView
+            android:id="@+id/lv_pay_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_confirm_pay"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_12"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12">
+
+    <ImageView
+        android:id="@+id/iv_news_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_12"
+        android:src="@drawable/join_icon"/>
+
+    <FrameLayout
+        android:id="@+id/fl_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_news_icon"
+        android:layout_alignTop="@id/iv_news_icon"
+        android:layout_marginRight="@dimen/dp_8_"
+        android:layout_marginTop="@dimen/dp_8_">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_news_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/news_circle_s"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_2_"
+                android:id="@+id/tv_news_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_toRightOf="@id/iv_news_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兰江集团参与竞标"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:id="@+id/tv_news_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:text="中铁·溪源花园三期桩基检测工程"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_14"/>
+    </LinearLayout>
+</RelativeLayout>

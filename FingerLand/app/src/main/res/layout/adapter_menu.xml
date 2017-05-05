@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_30"
+    android:background="@drawable/selector_root_blue"
+    android:gravity="center"
+    android:text="上山打老虎"
+    android:textColor="@color/gray_white_color"
+    android:textSize="@dimen/sp_10" />

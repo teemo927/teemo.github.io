@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adpapter_gaoren"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_12"
+    android:background="@drawable/selector_adapter_papers"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12">
+
+    <RelativeLayout
+        android:id="@+id/rlt_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lanjiang.figersland.widget.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/uesr_40dp" />
+
+        <ImageView
+            android:id="@+id/iv_mark"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_18"
+            android:src="@drawable/money" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="李云飞"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/iv_chart"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10.5"
+            android:src="@drawable/chat_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlt_top"
+        android:layout_marginTop="@dimen/dp_3_"
+        android:text="上来露个脸"
+        android:textColor="@color/word_important"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sign"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_2"
+        android:text="我是头牌，包满意，点我吧"
+        android:textColor="@color/word_normal"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>

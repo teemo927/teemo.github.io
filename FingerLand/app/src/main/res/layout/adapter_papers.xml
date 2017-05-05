@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_papers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_12"
+    android:background="@drawable/selector_adapter_papers"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlt_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_help"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:background="@drawable/shape_mark_color_main"
+            android:gravity="center"
+            android:text="求助"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_help"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@id/tv_help"
+            android:gravity="center_vertical"
+            android:text="土地使用权证求办"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_help"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:gravity="center_vertical"
+            android:text="￥8000.00"
+            android:textColor="@color/money"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlt_top"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="@dimen/dp_6"
+        android:text="已提交所有资料已提交所有资料已提交所有资料已提交所有资料"
+        android:textColor="@color/word_normal"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_msg"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_4"
+        android:gravity="center_vertical"
+        android:text="查看详情"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_10" />
+</RelativeLayout>

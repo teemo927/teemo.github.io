@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_root"
+    android:fitsSystemWindows="true"
+    tools:context="com.lanjiang.figersland.ui.PapersActivity">
+
+    <!--<include-->
+        <!--android:id="@+id/un_finish"-->
+        <!--layout="@layout/view_un_finish" />-->
+
+    <include layout="@layout/recycler_view_refresh"/>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+    <TextView
+        android:id="@+id/fab"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@drawable/ripple_fab"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:text="@string/add_zhengjian"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10"
+        android:translationZ="10dp" />
+
+</RelativeLayout>

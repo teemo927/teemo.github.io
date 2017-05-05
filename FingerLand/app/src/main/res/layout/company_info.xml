@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_company_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--公司服务区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_service_area"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_company_service_area_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深圳分公司"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <!--公司注册资本-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_registered_capital"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_company_registered_capital_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50万"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <!--公司联系方式-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_contact"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_company_contact_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:text="0755-86821459   广东省深圳市南山区文心五路闽泰大厦16楼兰江集团"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <!--公司主营业务-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_main_business"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_company_main_business_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:text="地产建设"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <!--报名描述-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_description"
+            android:textColor="@color/word_important"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_sign_up_description_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:lineSpacingExtra="@dimen/dp_3"
+            android:text="深耕地产二十年，兰江紧扣城市发展脉搏，用心演绎有主张的建设理念，赋予房地产开发以情感和生命力，专注客户价值取向，为社会打造超越客户预期的品质生活蓝本，通过不断创新和科学实施，视开发产品为精心之作品"
+            android:textColor="@color/word_normal"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</LinearLayout>
